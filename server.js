@@ -4,12 +4,7 @@ const responeHandle = require('./service/responeHandle');
 const successHandle = require('./service/successHandle');
 const errorHandle = require('./service/errorHandle');
 const { v4: uuidv4 } = require('uuid');
-const todos = [
-    {
-        "title": "刷牙",
-        "id" : uuidv4()
-    }
-];
+const todos = [];
 
 const requestListener = (req, res) => {
     let body = "";

@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "63b7da46-9798-4b15-9f77-97d6ee2b3b7e",
+		"name": "todolist - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ReadSingleTodo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nameless-wave-72302.herokuapp.com/todos/60b85253-e7d2-44b9-abce-6ef1fd51ccb2",
+					"protocol": "https",
+					"host": [
+						"nameless-wave-72302",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"60b85253-e7d2-44b9-abce-6ef1fd51ccb2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadAllTodo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://nameless-wave-72302.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"nameless-wave-72302",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddSingleTodo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"洗臉\"\r\n}"
+				},
+				"url": {
+					"raw": "https://nameless-wave-72302.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"nameless-wave-72302",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateSingleTodo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"洗臉2\"\r\n}"
+				},
+				"url": {
+					"raw": "https://nameless-wave-72302.herokuapp.com/todos/60b85253-e7d2-44b9-abce-6ef1fd51ccb2",
+					"protocol": "https",
+					"host": [
+						"nameless-wave-72302",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"60b85253-e7d2-44b9-abce-6ef1fd51ccb2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSingleTodo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://nameless-wave-72302.herokuapp.com/todos/60b85253-e7d2-44b9-abce-6ef1fd51ccb2",
+					"protocol": "https",
+					"host": [
+						"nameless-wave-72302",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"60b85253-e7d2-44b9-abce-6ef1fd51ccb2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAllTodo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://nameless-wave-72302.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"nameless-wave-72302",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
